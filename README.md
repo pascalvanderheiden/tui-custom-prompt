@@ -4,9 +4,18 @@ A reproducible setup for a **rainbow-flag Oh-My-Posh terminal prompt**. Use
 this repo to spin up an identical terminal on a new laptop (macOS / Linux /
 Windows), or to share the look-and-feel with others.
 
-The prompt renders as a single powerline line. Each segment only appears when
-it has something to show — **if a tool below is not installed, or the marker
-it looks for is not in the current folder, the segment is silently hidden**.
+## Preview
+
+![Prompt preview](./preview.svg)
+
+```
+   opt+spc to record   microsoft.com   my-app   pascalvanderheiden  🪙 717.0K   main ≢ ?5  squad  openspec  spec-kit  🐳 1/2 
+```
+
+> The prompt renders as a single powerline line. Each segment only appears
+> when it has something to show — **if a tool below is not installed, or the
+> marker it looks for is not in the current folder, the segment is silently
+> hidden**.
 
 ## What's in this repo
 

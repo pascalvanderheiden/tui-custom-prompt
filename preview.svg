@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="60" font-family="MesloLGM Nerd Font, Menlo, Consolas, monospace" font-size="16">
+  <rect width="1180" height="60" fill="#1e1e1e"/>
+
+  <!-- OS (red) -->
+  <rect x="0" y="14" width="36" height="28" fill="#e40303"/>
+  <text x="10" y="33" fill="#ffffff"></text>
+  <polygon points="36,14 50,28 36,42" fill="#e40303"/>
+
+  <!-- opt+spc hint (red) -->
+  <rect x="36" y="14" width="170" height="28" fill="#e40303"/>
+  <text x="50" y="33" fill="#ffffff">opt+spc to record</text>
+  <polygon points="206,14 220,28 206,42" fill="#e40303"/>
+
+  <!-- Azure (orange) -->
+  <rect x="206" y="14" width="140" height="28" fill="#ff8c00"/>
+  <text x="220" y="33" fill="#000000">microsoft.com</text>
+  <polygon points="346,14 360,28 346,42" fill="#ff8c00"/>
+
+  <!-- Folder (amber) -->
+  <rect x="346" y="14" width="80" height="28" fill="#ffb000"/>
+  <text x="360" y="33" fill="#000000"> my-app</text>
+  <polygon points="426,14 440,28 426,42" fill="#ffb000"/>
+
+  <!-- GitHub user (yellow) -->
+  <rect x="426" y="14" width="200" height="28" fill="#ffed00"/>
+  <text x="440" y="33" fill="#000000"> pascalvanderheiden</text>
+  <polygon points="626,14 640,28 626,42" fill="#ffed00"/>
+
+  <!-- Tokens (green) -->
+  <rect x="626" y="14" width="105" height="28" fill="#008026"/>
+  <text x="640" y="33" fill="#ffffff">🪙 717.0K</text>
+  <polygon points="731,14 745,28 731,42" fill="#008026"/>
+
+  <!-- Git (azure blue) -->
+  <rect x="731" y="14" width="115" height="28" fill="#0078d4"/>
+  <text x="745" y="33" fill="#ffffff"> main ≢ ?5</text>
+  <polygon points="846,14 860,28 846,42" fill="#0078d4"/>
+
+  <!-- Squad (blue) -->
+  <rect x="846" y="14" width="65" height="28" fill="#004dff"/>
+  <text x="860" y="33" fill="#ffffff">squad</text>
+  <polygon points="911,14 925,28 911,42" fill="#004dff"/>
+
+  <!-- OpenSpec (violet) -->
+  <rect x="911" y="14" width="85" height="28" fill="#8a2be2"/>
+  <text x="925" y="33" fill="#ffffff">openspec</text>
+  <polygon points="996,14 1010,28 996,42" fill="#8a2be2"/>
+
+  <!-- Spec-kit (violet) -->
+  <rect x="996" y="14" width="80" height="28" fill="#8a2be2"/>
+  <text x="1010" y="33" fill="#ffffff">spec-kit</text>
+  <polygon points="1076,14 1090,28 1076,42" fill="#8a2be2"/>
+
+  <!-- Colima (pink) -->
+  <rect x="1076" y="14" width="70" height="28" fill="#ff00d7"/>
+  <text x="1090" y="33" fill="#ffffff">🐳 1/2</text>
+  <polygon points="1146,14 1160,28 1146,42" fill="#ff00d7"/>
+</svg>
