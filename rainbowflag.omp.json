@@ -1,0 +1,163 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "foreground": "#FFFFFF",
+          "background": "#e40303",
+          "properties": {
+            "prefix": " ",
+            "wsl": "",
+            "wsl_separator": ""
+          }
+        },
+        {
+          "type": "text",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#e40303",
+          "template": " opt+spc to record "
+        },
+        {
+          "type": "az",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#000000",
+          "background": "#ff8c00",
+          "template": " {{ if .User.Name }}{{ regexReplaceAll \"^[^@]+@\" .User.Name \"\" }}{{ else }}{{ .Name }}{{ end }} "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#000000",
+          "background": "#ffb000",
+          "properties": {
+            "style": "folder",
+            "home_icon": "~"
+          },
+          "template": " \ue5ff {{ .Path }} "
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#000000",
+          "background": "#ffed00",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/gh-user.sh"
+          },
+          "cache": { "duration": "5m", "strategy": "session" },
+          "template": "{{ if .Output }} \uf09b {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#008026",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/tokens.sh"
+          },
+          "cache": { "duration": "5m", "strategy": "session" },
+          "template": "{{ if .Output }} \uf51e {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#0078d4",
+          "properties": {
+            "fetch_status": true,
+            "fetch_stash_count": true,
+            "fetch_upstream_icon": true,
+            "display_status": true,
+            "display_stash_count": true,
+            "display_upstream_icon": true
+          },
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and .Working.Changed .Staging.Changed }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} "
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#004dff",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/squad.sh"
+          },
+          "template": "{{ if .Output }} {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#004dff",
+          "properties": {
+            "threshold": 500,
+            "style": "round"
+          },
+          "template": " \uf252 {{ .FormattedMs }} "
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#8a2be2",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/openspec.sh"
+          },
+          "template": "{{ if .Output }} {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#8a2be2",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/speckit.sh"
+          },
+          "template": "{{ if .Output }} {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "command",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#ff00d7",
+          "properties": {
+            "shell": "bash",
+            "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/colima.sh"
+          },
+          "cache": { "duration": "30s", "strategy": "session" },
+          "template": "{{ if .Output }} \uf308 {{ .Output }} {{ end }}"
+        },
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#FFFFFF",
+          "background": "#750787"
+        }
+      ]
+    }
+  ]
+}
