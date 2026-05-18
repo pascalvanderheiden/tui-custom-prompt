@@ -57,7 +57,6 @@
             "shell": "bash",
             "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/gh-user.sh"
           },
-          "cache": { "duration": "5m", "strategy": "session" },
           "template": "{{ if .Output }} \uf09b {{ .Output }} {{ end }}"
         },
         {
@@ -70,7 +69,6 @@
             "shell": "bash",
             "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/tokens.sh"
           },
-          "cache": { "duration": "5m", "strategy": "session" },
           "template": "{{ if .Output }} \uf51e {{ .Output }} {{ end }}"
         },
         {
@@ -147,7 +145,6 @@
             "shell": "bash",
             "command": "/Users/pascalvanderheiden/GitHub/tui-custom-prompt/scripts/colima.sh"
           },
-          "cache": { "duration": "30s", "strategy": "session" },
           "template": "{{ if .Output }} \uf308 {{ .Output }} {{ end }}"
         },
         {
